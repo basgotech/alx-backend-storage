@@ -1,0 +1,2 @@
+// Fetch with key find
+db.school.find({name: "Holberton school"})
