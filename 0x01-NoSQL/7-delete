@@ -1,0 +1,2 @@
+// Delete with key attr
+db.school.deleteMany({name: "Holberton school"})
