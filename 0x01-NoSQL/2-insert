@@ -1,0 +1,2 @@
+// Insert a file
+db.school.insert({name: "Holberton school"})
