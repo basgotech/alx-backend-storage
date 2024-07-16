@@ -1,0 +1,2 @@
+// fetch all row based on holberton key strr
+db.school.find({name: {$regex: /^Holberton/}})
