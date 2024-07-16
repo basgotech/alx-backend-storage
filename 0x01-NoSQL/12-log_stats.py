@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-""" 12. Log stats
+"""
+excutes all log status
 """
 
 
@@ -7,11 +8,12 @@ from pymongo import MongoClient
 
 
 def log_stats():
-    """ log_stats.
     """
-    client = MongoClient('mongodb://127.0.0.1:27017')
-    logs_collection = client.logs.nginx
-    total = logs_collection.count_documents({})
+    commit all query
+    """
+    user = MongoClient('mongodb://127.0.0.1:27017')
+    logs_collection = user.logs.nginx
+    total_count = logs_collection.count_documents({})
     get = logs_collection.count_documents({"method": "GET"})
     post = logs_collection.count_documents({"method": "POST"})
     put = logs_collection.count_documents({"method": "PUT"})
@@ -19,7 +21,7 @@ def log_stats():
     delete = logs_collection.count_documents({"method": "DELETE"})
     path = logs_collection.count_documents(
         {"method": "GET", "path": "/status"})
-    print(f"{total} logs")
+    print(f"{total_count} logs")
     print("Methods:")
     print(f"\tmethod GET: {get}")
     print(f"\tmethod POST: {post}")
