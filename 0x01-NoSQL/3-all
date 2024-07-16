@@ -1,0 +1,2 @@
+// fetch All documents
+db.school.find()
